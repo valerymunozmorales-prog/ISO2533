@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #777777;
+  line-height: 1.8;
+}
+h1, h2, h3, h4 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #222222;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+hr {
+  width: 50px;
+  height: 2px;
+  background: white;
+  border: none;
+  margin: 15px 0;
+}
+h2 {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+header {
+  background: black;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 15px 100px;
+}
+
+header h3 {
+  color: white;
+  font-size: 24px;
+}
+
+header h3 span {
+    color:#ff9a4d;
+    font-weight: 300;
+}
+nav {
+  text-align: right;
+}
+
+nav a {
+  color: white;
+  font-size: 12px;
+  margin-left: 25px;
+}
+.inicio {
+  background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/headerBg.png');
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 50px;
+  align-items: center;
+  padding: 80px 100px;
+  min-height: 500px;
+  color: white;
+}
+.inicio h1 {
+  color: white;
+  font-size: 64px;
+  line-height: 1;
+}
+
+.inicio h1 span {
+  color: #ff9a4d;
+  font-weight: 300;
+}
+
+.inicio h2 {
+  color: white;
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 1.3;
+}
+.inicio hr{
+    margin: 25px 0;
+}
+.inicio p{
+    color:white;
+    font-size: 12px;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+.boton-borde {
+  display: inline-block;
+  border: 2px solid white;
+  color: white;
+  padding: 7px 28px;
+  font-size: 12px;
+}
+.formulario {
+  background: white;
+  box-shadow:  0 5px 20px black;
+}
+.formulario h3 {
+  background: #f5f5f5;
+  text-align: center;
+  font-size: 15px;
+  padding: 14px;
+}
+.formulario h3 span {
+  color: #ff9a4d;
+}
+.campos {
+  padding: 15px 25px 20px 25px;
+}
+.campos input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #dddddd;
+  padding: 14px 0;
+  margin-bottom: 8px;
+  font-size: 12px;
+  outline: none;
+}
+.formulario button {
+  width: 100%;
+  background: #ff9a4d;
+  color: white;
+  border: none;
+  padding: 18px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* ---------- REDES ---------- */
+.redes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 15px 100px;
+  border-bottom: 2px solid #dddddd;
+}
+
+.redes p {
+  font-size: 11px;
+}
+
+.iconos {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-size: 30px;
+  color: #bbbbbb;
+}
+
+/* ---------- GRIS ---------- */
+.gris {
+  background: #f2f2f2;
+}
+
+/* ---------- PESTAÑAS ---------- */
+.pestanas {
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr;
+  gap: 50px;
+  align-items: center;
+  padding: 80px 100px;
+}
+
+.tab {
+  background: #333333;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.tab.activa {
+  background: #ff9a4d;
+}
+
+.contenido h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contenido p {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.oculto {
+  display: none;
+}
+
+/* ---------- IMAGEN Y TEXTO ---------- */
+.imagen-texto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  padding: 80px 100px;
+}
+
+.imagen-texto h3 {
+  font-size: 16px;
+}
+
+.imagen-texto p {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.sombra {
+  width: 100%;
+  box-shadow: 0 5px 20px gray;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin-top: 20px;
+}
+
+.item h4 {
+  font-size: 12px;
+}
+
+.circulo {
+  width: 34px;
+  height: 34px;
+  border: 2px solid #ff9a4d;
+  border-radius: 50%;
+  color: #ff9a4d;
+  text-align: center;
+  line-height: 30px;
+}
+
+.grande {
+  width: 60px;
+  height: 60px;
+  line-height: 56px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* ---------- SECCIONES CENTRADAS ---------- */
+.centro {
+  text-align: center;
+  padding: 80px 100px;
+}
+
+.centro hr {
+  margin: 15px auto;
+}
+
+.centro p {
+  font-size: 12px;
+}
+
+.tres {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.tres h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* ---------- PLANES ---------- */
+.planes {
+  align-items: start;
+  padding: 0 40px;
+  gap: 20px;
+}
+
+.plan {
+  background: white;
+}
+
+.plan-titulo {
+  background: #333333;
+  color: white;
+  padding: 15px 0;
+  border-bottom: 3px solid #ff9a4d;
+}
+
+.plan-titulo h4,
+.plan-titulo h1 {
+  color: white;
+}
+
+.plan-titulo h1 {
+  font-size: 55px;
+}
+
+.plan-titulo small {
+  font-style: italic;
+}
+
+.grande .plan-titulo {
+  padding-top: 25px;
+}
+
+.popular {
+  background: #ff9a4d;
+  color: white;
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+.plan ul {
+  list-style: none;
+}
+
+.plan li {
+  padding: 10px;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+/* ---------- OPINIONES ---------- */
+.cita {
+  background: #f2f2f2;
+  padding: 15px;
+  font-style: italic;
+  text-align: left;
+}
+
+.persona {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.persona img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.persona h4 {
+  font-size: 13px;
+  margin: 0;
+}
+
+/* ---------- BANNER ---------- */
+.banner {
+  background: url('img/cta.jpg') center / cover;
+  text-align: center;
+  padding: 70px 100px;
+  color: white;
+}
+
+.banner h2,
+.banner p {
+  color: white;
+}
+
+.banner hr {
+  margin: 15px auto;
+}
+
+.banner p {
+  margin-bottom: 20px;
+}
+
+/* ---------- CONTACTO ---------- */
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 40px 0 30px 0;
+}
+
+.contacto input,
+.contacto textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  padding: 12px 0;
+  margin-bottom: 10px;
+}
+
+.contacto textarea {
+  height: 120px;
+}
+
+/* ---------- PIE ---------- */
+footer {
+  background: black;
+  color: gray;
+  text-align: center;
+  padding: 15px;
+}
+
+.iconos-pie {
+  display: grid;
+  grid-template-columns: repeat(7, 30px);
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+}
+
+footer p {
+  font-size: 9px;
+}
+
+/* ---------- CELULAR ---------- */
+@media (max-width: 800px) {
+  header, .inicio, .redes, .pestanas, .imagen-texto, .tres, .contacto {
+    grid-template-columns: 1fr;
+  }
+  header, .inicio, .redes, .pestanas, .imagen-texto, .centro, .banner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  nav {
+    text-align: left;
+  }
+  nav a {
+    margin: 0 10px 0 0;
+  }
+}
